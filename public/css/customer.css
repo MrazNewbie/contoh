@@ -1,0 +1,43 @@
+
+/*---- Style Navbar  -----*/
+
+*{
+    font-family: 'Poppins', 'sans-serif';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.icon-nav {
+    position: relative;
+    color: #8BACAA
+}
+
+.icon-nav:hover {
+    color: white
+}
+
+.circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 11px;
+    top: 10px;
+    right: 78px;
+}
+
+section {
+    min-height: 70vh;
+}
+
+/*---- Style Footer -----*/
+footer {
+    background-color: #0174BE;
+    color: white;
+    position: static;
+    bottom: 0;
+}
