@@ -3,15 +3,29 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <h1 class="modal-title fs-5 " id="exampleModalLabel">Login</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                ...
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="mb-3 row">
+                    <label for="email" class="col-sm-3 col-form-label">Email</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="email" value=""
+                            placeholder="Masukan email anda">
+                    </div>
+                </div>
+                <div class="mb-5 row">
+                    <label for="password" class="col-sm-3 col-form-label">Password</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="pesan" placeholder="Masukan password anda">
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-success col-sm-12">Login</button>
+                <p class=" m-auto text-center p-2" style="font-size: 12px">Jika belum mempunyai akun silahkan register
+                </p>
+                <button type="button" class="btn btn-primary col-sm-12" data-bs-toggle="modal"
+                    data-bs-target="#registerModal">Register</button>
             </div>
         </div>
     </div>

@@ -20,6 +20,11 @@
     <title>Noorani Jaya {{ $title }}</title>
     <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('css/customer.css') }}">
+    <!-- JS -->
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -40,7 +45,8 @@
         </footer>
     </main>
 
-    {{-- @include('pelanggan.modal.loginPelanggan')  --}}
+    @include('pelanggan.modal.loginPelanggan')
+    @include('pelanggan.modal.registerPelanggan')
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -49,5 +55,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
 </script>
+<script src="{{ asset('js/customer.js') }}"></script>
 
 </html>
